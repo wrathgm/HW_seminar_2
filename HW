@@ -42,8 +42,7 @@ for char, count in count_dict.items():
 3 -> [2, 3, -3, -2, -1, 0, 1]
 
 
-numbers = []
-n = int(input('Введите число: '))
-for el in range(n):
-    numbers.append((-3)**el)
-print(numbers)
+N = 3
+lst = list(range(-N, N+1))
+lst = lst[-2:] + lst[:-2]
+print(lst)
